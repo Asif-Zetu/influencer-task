@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* shared styles */
+
+.display-flex {
+  display: flex;
+}
+
+/* navbar styles */
+
+.navbar {
+  margin: 50px auto;
+  max-width: 1440px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h4 {
+  color: rgb(58, 58, 58);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav-options li {
+  margin-right: 34px;
+  list-style: none;
+  /* color: rgb(58, 58, 58); */
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav-options a {
+  text-decoration: none;
+  color: rgb(58, 58, 58);
+}
+
+/* start section styles */
+
+.start {
+  max-width: 1440px;
+  margin: 50px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.start-title {
+  max-width: 582px;
+  color: rgb(58, 58, 58);
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.start-des {
+  color: rgb(58, 58, 58);
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 505px;
+  margin-bottom: 16px;
+}
+
+.btn-primary {
+  width: 196px;
+  height: 44px;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 41px;
+  background: rgb(224, 44, 109);
+}
+
+.main-camera {
+  background-image: url("../images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  padding-right: 70px;
+}
+
+/* sponsor section styles */
+
+.sponsor {
+  max-width: 1110px;
+  margin: 150px auto;
+  text-align: center;
+}
+
+.sponsor-list img{
+    margin-right: 60px;
+    padding: 34px 0;
+}
+
+.sponsor-list{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #f0f0f0, #8c8c8c, #f0f0f0);
+}
+
+/* responsive for mobile */
+
+@media screen and (max-width: 576px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .nav-options ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .start{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .main-camera{
+        width: 70%;
+        background-position: center;
+        background-size: 100%;
+    }
+    .sponsor{
+        margin: 20px 0;
+    }
+    .sponsor-list{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .sponsor-list img{
+        width: 60%;
+        margin-right: 0px;
+        padding: 0px 0;
+    }
+}
