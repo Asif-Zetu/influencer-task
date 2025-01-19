@@ -201,6 +201,9 @@ hr {
   .navbar {
     flex-direction: column;
   }
+  .nav-options {
+    margin-top: -30px;
+  }
   .nav-options ul {
     flex-direction: column;
     text-align: center;
@@ -209,6 +212,15 @@ hr {
   .start {
     flex-direction: column-reverse;
     text-align: center;
+  }
+  .start-title {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .start-des {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 20px 20px 20px;
   }
   .main-camera {
     width: 70%;
@@ -225,5 +237,23 @@ hr {
     width: 60%;
     margin-right: 0px;
     padding: 0px 0;
+  }
+  .collection-cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 16px 0 16px;
+  }
+  .collection-card img {
+    width: 100%;
+  }
+  .card-title {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .collection-price {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .collection-title {
+    margin: 50px 0 20px 0;
   }
 }
